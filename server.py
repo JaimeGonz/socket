@@ -22,7 +22,7 @@ def main():
     bytesAddressPair = UDPServerSocket.recvfrom(bufferSize)
     message = bytesAddressPair[0]
     address = bytesAddressPair[1]
-    clientMsg = "Mensaje para el Cliente: {}".format(message)
+    clientMsg = "Mensaje del Cliente: {}".format(message)
     clientIP = "Dirección IP del Cliente: {}".format(address)
 
     print(clientMsg)
